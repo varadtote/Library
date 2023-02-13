@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -28,6 +29,14 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: auto;
     gap: 10px;
+}
+
+#addBook {
+    padding: 8px;
+    background-color: #fff;
+    border: 0.1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .book {
@@ -59,14 +68,14 @@ main {
 
 
 .modal {
-    height: 250px;
+    height: 350px;
     width: 250px;
     background-color: rgb(255, 255, 255);
     padding: 25px;
     border: 1px solid black;
     border-radius: 10px;
     z-index: 1;
-    /* display: none; */
+    display: none;
     position: fixed;
     left: 50%;
     top: 25%;
@@ -92,4 +101,20 @@ main {
     background-color: #fff;
     border: none;
     cursor: pointer;
+}
+
+#Delete {
+    float: right;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+#submitbook {
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: #fff;
 }

@@ -22,7 +22,7 @@
     <main>
       <div class="controls">
         <h4>Recently added</h4>
-        <button id="addBook">Add Books</button>
+        <button id="addBook" onclick="ModalOpen()">Add Books</button>
       </div>
       <div class="books">
         <div class="book">
@@ -38,7 +38,7 @@
       </div>
     </main>
     <div id="mymodal" class="modal">
-      <button id="closebuttons">
+      <button id="closebuttons" onclick="ModalClose()">
         <span class="material-symbols-outlined"> close </span>
       </button>
       <h4>Book Details</h4>
@@ -71,5 +71,6 @@
         </button>
       </form>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
