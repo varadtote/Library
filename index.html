@@ -14,10 +14,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <nav>
-      <h1>Library</h1>
+      <h1 class="mainTitle">library</h1>
     </nav>
     <main>
       <div class="controls">
@@ -32,7 +36,15 @@
           </div>
           <div class="SecondaryInfo">
             <p class="pages">250 pages</p>
-            <p class="status">Status Read</p>
+            <p class="status">
+             <p class="CurrentStatus"> Not Yet Started </p>
+              <button class="update">
+                <div class="tooltip material-symbols-outlined">update
+                  <span class="tooltiptext">Update</span>
+                </div>
+                
+              </button>
+            </p>
           </div>
         </div>
       </div>
@@ -42,30 +54,30 @@
         <span class="material-symbols-outlined"> close </span>
       </button>
       <h4>Book Details</h4>
-      <form>
+      <form id="AddBookForm">
         <div class="formsections">
           <label for="Book">Name of Book</label>
-          <input type="text" name="" id="" />
+          <input type="text" name="Book" id="bookTitle" />
         </div>
         <div>
           <label for="author">Author </label>
           <br />
-          <input type="text" name="" id="" />
+          <input type="text" name="author" id="author" />
         </div>
         <div>
-          <label for="Book">Pages</label>
+          <label for="pages">Pages</label>
           <br />
-          <input type="number" name="" id="" />
+          <input type="number" name="pages" id="Totalpages" />
         </div>
         <div>
           <label for="Book">Status</label>
-          <select name="cars" id="cars">
-            <option value="volvo">Reading</option>
-            <option value="saab">Finished Reading</option>
-            <option value="saab">Not Yet Started</option>
+          <select name="books" id="books-status">
+            <option value="Reading">Reading</option>
+            <option value="Finished Reading">Finished Reading</option>
+            <option value="Not Yet Started">Not Yet Started</option>
           </select>
         </div>
-        <button id="submitbook" type="submit">Add Book</button>
+        <button id="submitbook" onclick="Show()">Add Book</button>
         <button id="Delete" type="submit">
           <span class="material-symbols-outlined"> delete </span>
         </button>
