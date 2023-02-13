@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 10vh;
+    background-color: blue;
+}
+
+main {
+    height: 90vh;
+    background-color: orange;
+}
+.controls {
+    padding: 25px;
+}
+
+.books {
+    margin: 25px;
+    
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    width: 250px;
+    background-color: rgb(242, 223, 242);
+    padding: 10px;
+    
+    border-radius: 10px;
+}
+
+.Title {
+    border-bottom: 1px solid gray;
+}
+
+.author {
+    margin-top: 5px;
+}
+
+.SecondaryInfo {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+}
