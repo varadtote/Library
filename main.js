@@ -11,3 +11,5 @@ function BookInfo(BookName, Author, Totalpages, status) {
 
 const Book1 = new BookInfo("The Hobbit", "JRR", 59, "not read")
 console.log(Book1.info())
+
+

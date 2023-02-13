@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <nav>
@@ -14,7 +22,7 @@
     <main>
       <div class="controls">
         <h4>Recently added</h4>
-        <button>Add Books</button>
+        <button id="addBook">Add Books</button>
       </div>
       <div class="books">
         <div class="book">
@@ -27,67 +35,41 @@
             <p class="status">Status Read</p>
           </div>
         </div>
-        <div class="book">
-          <div class="MainInfo">
-            <h2 class="Title">The Monk who Sold his ferrari</h2>
-            <h3 class="author">By Robin Sharma</h3>
-          </div>
-          <div class="SecondaryInfo">
-            <p class="pages">250 pages</p>
-            <p class="status">Status Read</p>
-          </div>
-        </div>
-        <div class="book">
-          <div class="MainInfo">
-            <h2 class="Title">The Monk who Sold his ferrari</h2>
-            <h3 class="author">By Robin Sharma</h3>
-          </div>
-          <div class="SecondaryInfo">
-            <p class="pages">250 pages</p>
-            <p class="status">Status Read</p>
-          </div>
-        </div>
-        <div class="book">
-          <div class="MainInfo">
-            <h2 class="Title">The Monk who Sold his ferrari</h2>
-            <h3 class="author">By Robin Sharma</h3>
-          </div>
-          <div class="SecondaryInfo">
-            <p class="pages">250 pages</p>
-            <p class="status">Status Read</p>
-          </div>
-        </div>
-        <div class="book">
-          <div class="MainInfo">
-            <h2 class="Title">The Monk who Sold his ferrari</h2>
-            <h3 class="author">By Robin Sharma</h3>
-          </div>
-          <div class="SecondaryInfo">
-            <p class="pages">250 pages</p>
-            <p class="status">Status Read</p>
-          </div>
-        </div>
-        <div class="book">
-          <div class="MainInfo">
-            <h2 class="Title">The Monk who Sold his ferrari</h2>
-            <h3 class="author">By Robin Sharma</h3>
-          </div>
-          <div class="SecondaryInfo">
-            <p class="pages">250 pages</p>
-            <p class="status">Status Read</p>
-          </div>
-        </div>
-        <div class="book">
-          <div class="MainInfo">
-            <h2 class="Title">The Monk who Sold his ferrari</h2>
-            <h3 class="author">By Robin Sharma</h3>
-          </div>
-          <div class="SecondaryInfo">
-            <p class="pages">250 pages</p>
-            <p class="status">Status Read</p>
-          </div>
-        </div>
       </div>
     </main>
+    <div id="mymodal" class="modal">
+      <button id="closebuttons">
+        <span class="material-symbols-outlined"> close </span>
+      </button>
+      <h4>Book Details</h4>
+      <form>
+        <div class="formsections">
+          <label for="Book">Name of Book</label>
+          <input type="text" name="" id="" />
+        </div>
+        <div>
+          <label for="author">Author </label>
+          <br />
+          <input type="text" name="" id="" />
+        </div>
+        <div>
+          <label for="Book">Pages</label>
+          <br />
+          <input type="number" name="" id="" />
+        </div>
+        <div>
+          <label for="Book">Status</label>
+          <select name="cars" id="cars">
+            <option value="volvo">Reading</option>
+            <option value="saab">Finished Reading</option>
+            <option value="saab">Not Yet Started</option>
+          </select>
+        </div>
+        <button id="submitbook" type="submit">Add Book</button>
+        <button id="Delete" type="submit">
+          <span class="material-symbols-outlined"> delete </span>
+        </button>
+      </form>
+    </div>
   </body>
 </html>
